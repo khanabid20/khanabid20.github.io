@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/nav.js"></script>
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">
+        London
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
 
-<h1>INDEX</h1>
-<br/>
-<p>You can't remember everything... :/ </p>
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
 
-<ul>
-    <li><a href="/devops/main.html">DevOps</a></li>
-    <li><a href="/devops/main.html">DevOps</a></li>
-    <li><a href="/devops/main.html">DevOps</a></li>
-</ul>
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
 
-</body>
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+  </body>
 </html>
-
